@@ -25,8 +25,13 @@ public class MyArrayList {
 		for(String e : temp) {
 			System.out.println(e);
 		}
+		System.out.println();
 		
-		System.out.println(fruits);
+		System.out.println(fruits+"\n");
+		
+		fruits.removeAll(vegetables);
+		
+		System.out.println(fruits+"\n");
 		
 		fruits.clear();
 		
