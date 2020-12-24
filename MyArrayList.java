@@ -21,6 +21,7 @@ public class MyArrayList {
 		//Using the addAll function
 		fruits.addAll(vegetables);
 		
+		//Using for each loop 
 		String temp[] = new String[fruits.size()];
 		
 		fruits.toArray(temp);
