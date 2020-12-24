@@ -23,9 +23,13 @@ public class MyArrayList {
 		fruits.toArray(temp);
 		
 		for(String e : temp) {
-			System.out.println(e);
+			System.out.print(e + " ");
 		}
-		System.out.println();
+		System.out.println("\n");
+		
+		System.out.println(fruits.get(2)+"\n");
+		
+		fruits.remove(2);
 		
 		System.out.println(fruits+"\n");
 		
