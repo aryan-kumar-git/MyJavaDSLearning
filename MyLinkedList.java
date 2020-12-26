@@ -4,11 +4,11 @@ public class MyLinkedList {
 
 	public static void main(String[] args) {
 		
-		List<Integer> ll = new LinkedList<>();
-		List<Integer> al = new ArrayList<>();
+		List<Integer> llist = new LinkedList<>();
+		List<Integer> alist = new ArrayList<>();
 		
-		getTimeDiff(al);
-		getTimeDiff(ll);
+		getTimeDiff(alist);
+		getTimeDiff(llist);
 
 	}
 	
