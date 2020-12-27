@@ -1,14 +1,14 @@
 package dataStructures.listDS;
 
-public class ImplementingLinkedList {
+public class ImplementingLinkedList<E> {
 	
-	Node Head;
+	Node<E> Head;
 	
-	void Add(int data) {
+	void Add(E data) {
 		
-		Node toAdd = new Node(data);
+		Node<E> toAdd = new Node<>(data);
 		
-		Node temp = Head;
+		Node<E> temp = Head;
 		
 		if(Head == null) {
 			Head = toAdd;
@@ -22,8 +22,10 @@ public class ImplementingLinkedList {
 		temp.next = toAdd;
 	}
 	
+	
+	
 	void Print() {
-		Node temp = Head;
+		Node<E> temp = Head;
 		while(temp != null) {
 			System.out.print(temp.data + " ");
 			temp = temp.next;
@@ -31,11 +33,11 @@ public class ImplementingLinkedList {
 		
 	}
 	
-	static class Node{
-		Node next;
-		int data;
+	static class Node<E>{
+		Node<E> next;
+		E data;
 		
-		public Node(int data) {
+		public Node(E data) {
 			this.data = data;
 			next = null;
 		}
