@@ -73,9 +73,9 @@ public class ImplementingLinkedList<E> {
 		return Head == null;
 	}
 	
-	static class Node<E>{
-		Node<E> next;
-		E data;
+	 public static class Node<E>{
+		public Node<E> next;
+		public E data;
 		
 		public Node(E data) {
 			this.data = data;
