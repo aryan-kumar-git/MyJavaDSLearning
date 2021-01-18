@@ -35,7 +35,7 @@ public class FindingSum {
 		} else System.out.println("Access denied");
 		
 		sc.close();
-		System.gc();
+		
 	}
 	
 }
