@@ -3,7 +3,7 @@ import java.util.*;
 public class FindingSum {
 
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -26,7 +26,13 @@ public class FindingSum {
 		
 		if(even > odd) {
 			System.out.println("Access Granted");
-		} else System.out.println("Access Denied");
+			
+		} else if(even == odd) {
+			System.out.println("Let me ask my boss...");
+			Thread.sleep(2500);
+			System.out.println("Access granted");
+			
+		} else System.out.println("Access denied");
 		
 		sc.close();
 		System.gc();
