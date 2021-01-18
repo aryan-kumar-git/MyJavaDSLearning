@@ -7,14 +7,19 @@ public class FindingSum {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		//Taking user input
 		System.out.print("Enter your moblie number : ");
 		String n = sc.next();
+		
+		//Converting the string to character array
 		char arr[] = n.toCharArray();
 		
 		int odd = 0;
 		int even = 0;
 		
 		for(int i = 0; i < n.length(); i++) {
+			
+			//Taking the numerical value of the character
 			int c = Character.getNumericValue(arr[i]);
 			if(c % 2 == 0) {
 				even += c;
@@ -29,6 +34,7 @@ public class FindingSum {
 			
 		} else if(even == odd) {
 			System.out.println("Let me ask my boss...");
+			//Delaying the program for 2500 ms
 			Thread.sleep(2500);
 			System.out.println("Access granted");
 			
